@@ -1,0 +1,8 @@
+1. git으로 관리할 경로까지 이동
+2. 초기화(.git 폴더 생성-숨겨져 있음)
+    git init (git 장소 생성)
+      ls -al (숨긴파일 확인)
+
+3. 브랜치 이름 기본값 변경하기(master일때)
+      git config --global init.defaultBranch main
+
