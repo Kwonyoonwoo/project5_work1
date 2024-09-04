@@ -45,3 +45,5 @@ git remote rm 리모트이름
 git remote rm origin
 
 git push -u origin main
+
+안녕
