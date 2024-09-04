@@ -53,3 +53,35 @@ git remote rm origin
 
 4. github 데이터 넣기
 git push -u origin main
+git push
+
+9/4==========================================
+5. clone
+- 코드가 없는 상태에서 전체 코드를 다운로드 받을 경우
+
+# 현재 위치에 라파지토리 이름의 폴더를 만드록 파일을 가져온다
+git clone <git-remote-url>
+
+# 디렉토리 위치에 파일을 가져온다.
+git clone <git-remote-url> <디렉토리>
+git clone <git-remote-url> .
+
+6. pull
+-코드가 있는 상태에서 변경된 부분만 받을 경우
+git pull
+
+7. 브랜치 작성
+- 브랜치 목록 확인
+git branch
+
+- 브랜치 생성
+git branch test01
+
+- 브랜치 이동
+git switch test01
+
+- 브랜치에서 소스 코딩, add, commit 작업 진행
+
+
+
+파일 제외 시키기
