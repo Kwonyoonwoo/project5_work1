@@ -100,7 +100,6 @@ git log --graph --all --oneline
 
 파일 제외 시키기
 app.ini같은 파일에 개인정보가 있음
-
 .gitignore: 숨겨진 파일
 
 #경로는 상관없이 특정파일 제외하기
@@ -120,3 +119,6 @@ filename.txt
 
 #특정 확장자를 가진 파일 제거
 *.png
+
+제외시켜도 있으면 캐쉬삭제하고진행
+ git rm -r --cached .
