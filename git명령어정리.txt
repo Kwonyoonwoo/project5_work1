@@ -99,4 +99,24 @@ git log --graph --all --oneline
 
 
 파일 제외 시키기
-.gitignore
+app.ini같은 파일에 개인정보가 있음
+
+.gitignore: 숨겨진 파일
+
+#경로는 상관없이 특정파일 제외하기
+filename.txt
+
+#현재 경로에 있는 파일만 제거
+/filename.txt
+
+#특정 폴더에 있는 파일 제외
+폴더명/
+
+#특정 경로의 특정 파일 제외
+폴더명/filename.txt
+
+#특정 경로 아래 특정 파일 제외
+폴더명/**/filename.txt
+
+#특정 확장자를 가진 파일 제거
+*.png
