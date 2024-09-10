@@ -96,8 +96,7 @@ git branch 브랜치명 커밋번호
 
 git log --graph --all --oneline
 
-
-
+9/5===============================================================================
 파일 제외 시키기
 app.ini같은 파일에 개인정보가 있음
 .gitignore: 숨겨진 파일
@@ -126,3 +125,33 @@ filename.txt
 
 상위폴더로 이동
 cd ..
+-------------------------------------------------------------------------------
+test01 브랜치에서 작업하는 중
+1. 새브랜치 작성
+git branch test01
+2. 브런치 이동
+git switch test01
+3. 코드작성, add, commit
+4. push
+git push origin test01(브랜치명을 적어준다.)
+5. main에 올리기
+6. 브랜치 삭제
+-로컬
+git switch main
+git branch -d test01
+-리모트
+git push origin --delete test01
+
+git push origin main -f 무조건 로컬과 github를 맞춰라
+
+
+
+git revert: 커밋을 뒤로 돌린다. ~(커밋은 삭제가 안됨)
+
+
+git revert 38d5405 (첫번째 커밋)```
+병합후 현제 상태로 되돌림 그후 병합
+
+git revert --abort (중단하는 것)
+git revert --continue (계속하는 것)
+-> continue 파일이 열리는데 읽어보고 닫으면 된다.
